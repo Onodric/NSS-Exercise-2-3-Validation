@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Generic Bank Form</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="author" href="humans.txt">
+  </head>
+  
+  <body>
+    <form action="#" method="post">
+      <h1>Generic Bank Form</h1>
+<!-- Banking form -->
+
+<!-- Build a form that accepts a loan application. It must have the following fields. -->
+      <fieldset class="basic-info">
+        <h2>Basic Information</h2>
+<!-- 1. Applicant first name -->
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="f-name">
+<!-- 1. Applicant middle initial -->
+        <label for="mid-init">Middle Initial:</label>
+        <input type="text" id="mid-init" name="m-name">
+<!-- 1. Applicant last name -->
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="l-name">
+<!-- 1. Applicant address -->
+        <label for="address">Street Address:</label>
+        <input type="text" id="address" name="st-add">
+        <label for="city">City</label>
+        <input type="text" id="city" name="city-add">
+        <label for="state">State:</label>
+        <select id="state" name="st" size="1">
+          <option value="AK">AK</option>
+          <option value="AL">AL</option>
+          <option value="AR">AR</option>
+          <option value="AZ">AZ</option>
+          <option value="CA">CA</option>
+          <option value="CO">CO</option>
+          <option value="CT">CT</option>
+          <option value="DC">DC</option>
+          <option value="DE">DE</option>
+          <option value="FL">FL</option>
+          <option value="GA">GA</option>
+          <option value="HI">HI</option>
+          <option value="IA">IA</option>
+          <option value="ID">ID</option>
+          <option value="IL">IL</option>
+          <option value="IN">IN</option>
+          <option value="KS">KS</option>
+          <option value="KY">KY</option>
+          <option value="LA">LA</option>
+          <option value="MA">MA</option>
+          <option value="MD">MD</option>
+          <option value="ME">ME</option>
+          <option value="MI">MI</option>
+          <option value="MN">MN</option>
+          <option value="MO">MO</option>
+          <option value="MS">MS</option>
+          <option value="MT">MT</option>
+          <option value="NC">NC</option>
+          <option value="ND">ND</option>
+          <option value="NE">NE</option>
+          <option value="NH">NH</option>
+          <option value="NJ">NJ</option>
+          <option value="NM">NM</option>
+          <option value="NV">NV</option>
+          <option value="NY">NY</option>
+          <option value="OH">OH</option>
+          <option value="OK">OK</option>
+          <option value="OR">OR</option>
+          <option value="PA">PA</option>
+          <option value="RI">RI</option>
+          <option value="SC">SC</option>
+          <option value="SD">SD</option>
+          <option value="TN">TN</option>
+          <option value="TX">TX</option>
+          <option value="UT">UT</option>
+          <option value="VA">VA</option>
+          <option value="VT">VT</option>
+          <option value="WA">WA</option>
+          <option value="WI">WI</option>
+          <option value="WV">WV</option>
+          <option value="WY">WY</option>
+        </select>
+        <label for="zip">Zip Code</label>
+        <input type="text" id="zip" name="zip-code">
+<!-- 1. Applicant email address -->
+        <label for="mail">Email Address:</label>
+        <input type="email" id="mail" name="email">
+<!-- 1. Applicant telephone number -->
+        <label for="tel-num">Telephone:</label>
+        <input type="tel" id="tel-num" name="phone">
+<!-- 1. Applicant LinkedIn URL  -->
+        <label for="linkedin">LinkedIn URI:</label>
+        <input type="url" id="linkedin" name="linkin">
+      </fieldset>
+      <fieldset class="employ-info">
+        <h2>Employment Information</h2>
+<!-- 1. Applicant occupation -->
+        <label for="job">Occupation:</label>
+        <input type="text" id="job" name="occupation">
+<!-- 1. Applicant employer -->
+        <label for="boss">Employer:</label>
+        <input type="text" id="boss" name="employer">
+<!-- 1. Employer address -->
+        <label for="emp-address">Employer's Street Address:</label>
+        <input type="text" id="emp-address" name="emp-st-add">
+        <label for="emp-city">City</label>
+        <input type="text" id="emp-city" name="emp-city-add">
+        <label for="emp-state">State:</label>
+        <select id="emp-state" name="emp-st" size="1">
+          <option value="AK">AK</option>
+          <option value="AL">AL</option>
+          <option value="AR">AR</option>
+          <option value="AZ">AZ</option>
+          <option value="CA">CA</option>
+          <option value="CO">CO</option>
+          <option value="CT">CT</option>
+          <option value="DC">DC</option>
+          <option value="DE">DE</option>
+          <option value="FL">FL</option>
+          <option value="GA">GA</option>
+          <option value="HI">HI</option>
+          <option value="IA">IA</option>
+          <option value="ID">ID</option>
+          <option value="IL">IL</option>
+          <option value="IN">IN</option>
+          <option value="KS">KS</option>
+          <option value="KY">KY</option>
+          <option value="LA">LA</option>
+          <option value="MA">MA</option>
+          <option value="MD">MD</option>
+          <option value="ME">ME</option>
+          <option value="MI">MI</option>
+          <option value="MN">MN</option>
+          <option value="MO">MO</option>
+          <option value="MS">MS</option>
+          <option value="MT">MT</option>
+          <option value="NC">NC</option>
+          <option value="ND">ND</option>
+          <option value="NE">NE</option>
+          <option value="NH">NH</option>
+          <option value="NJ">NJ</option>
+          <option value="NM">NM</option>
+          <option value="NV">NV</option>
+          <option value="NY">NY</option>
+          <option value="OH">OH</option>
+          <option value="OK">OK</option>
+          <option value="OR">OR</option>
+          <option value="PA">PA</option>
+          <option value="RI">RI</option>
+          <option value="SC">SC</option>
+          <option value="SD">SD</option>
+          <option value="TN">TN</option>
+          <option value="TX">TX</option>
+          <option value="UT">UT</option>
+          <option value="VA">VA</option>
+          <option value="VT">VT</option>
+          <option value="WA">WA</option>
+          <option value="WI">WI</option>
+          <option value="WV">WV</option>
+          <option value="WY">WY</option>
+        </select>
+        <label for="zip">Zip Code</label>
+        <input type="text" id="zip" name="zip-code">
+      </fieldset>
+
+      <fieldset class="loan-info">
+        <h2>Monetary Needs</h2>
+<!-- 1. Type of loan select element with these options: -->
+        <label for="loan-type">Loan Type:</label>
+        <select id="loan-type">
+    <!-- 1. Commercial -->
+          <option value="commercial">Commercial</option>
+    <!-- 1. Real estate -->
+          <option value="real-estate">Real Estate</option>
+    <!-- 1. Personal -->
+          <option value="personal">Personal</option>
+    <!-- 1. Mortgage -->
+          <option value="martgage">Mortgage</option>
+        </select>
+<!-- 1. Requested amount of loan -->
+        <label for="amount">Loan Amount:</label>
+        <input type="text" id="amount" name="loan-amount">
+<!-- 1. Radio button elements for loan length -->
+        <label>Desired Loan Duration:</label>
+    <!-- 1. 5 years -->
+          <input type="radio" id="five-yrs" value="five-yrs" name="loan-time">
+            <label for="five-yrs" class="duration">5 Years</label>
+    <!-- 1. 15 years -->
+          <input type="radio" id="fifteen-yrs" value="fifteen-yrs" name="loan-time">
+            <label for="fifteen-yrs" class="duration">15 Years</label>
+    <!-- 1. 30 years -->
+          <input type="radio" id="thirty-yrs" value="thirty-yrs" name="loan-time">
+            <label for="thirty-yrs" class="duration">30 Years</label>
+      </fieldset>
+      <fieldset>
+<!-- 1. Checkbox group for special conditions -->
+        <label>Special Conditions:</label>
+    <!-- 1. I have a down payment -->
+          <input type="checkbox" id="down-pmt" value="cond-down-pmt" name="spec-cond">
+            <label for="down-pmt" class="sp-cond">I have a down payment</label>
+    <!-- 1. Out-of-state resident -->
+          <input type="checkbox" id="out-state" value="cond-out-st" name="spec-cond">
+            <label for="out-state" class="sp-cond">I live out-of-state</label>
+    <!-- 1. Married -->
+          <input type="checkbox" id="married" value="cond-married" name="spec-cond">
+            <label for="married" class="sp-cond">I am married</label>
+    <!-- 1. Loan will be co-signed -->
+          <input type="checkbox" id="co-sign" value="cond-co-sign" name="spec-cond">
+            <label for="co-sign" class="sp-cond">I have a co-signer</label>
+      </fieldset>
+       
+<!-- 1. A text area to allow for additional comments -->
+      <button type="submit">Submit</button>
+    </form>
+      <!-- <script src="js/main.js"></script> -->
+  </body>
+</html>
