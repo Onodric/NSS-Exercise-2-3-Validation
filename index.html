@@ -5,7 +5,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Generic Bank Form</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="author" href="humans.txt">
   </head>
   
@@ -19,20 +19,21 @@
         <h2>Basic Information</h2>
 <!-- 1. Applicant first name -->
         <label for="first-name">First Name:</label>
-        <input type="text" id="first-name" name="f-name">
+        <input type="text" id="first-name" name="f-name" required>
 <!-- 1. Applicant middle initial -->
         <label for="mid-init">Middle Initial:</label>
         <input type="text" id="mid-init" name="m-name">
 <!-- 1. Applicant last name -->
         <label for="last-name">Last Name:</label>
-        <input type="text" id="last-name" name="l-name">
+        <input type="text" id="last-name" name="l-name" required><br>
 <!-- 1. Applicant address -->
         <label for="address">Street Address:</label>
-        <input type="text" id="address" name="st-add">
+        <input type="text" id="address" name="st-add" required><br>
         <label for="city">City</label>
-        <input type="text" id="city" name="city-add">
+        <input type="text" id="city" name="city-add" required><br>
         <label for="state">State:</label>
-        <select id="state" name="st" size="1">
+        <select id="state" name="st" size="1" required><br>
+          <option value="null" disabled selected>State</option>
           <option value="AK">AK</option>
           <option value="AL">AL</option>
           <option value="AR">AR</option>
@@ -86,32 +87,33 @@
           <option value="WY">WY</option>
         </select>
         <label for="zip">Zip Code</label>
-        <input type="text" id="zip" name="zip-code">
+        <input type="text" id="zip" name="zip-code" required><br>
 <!-- 1. Applicant email address -->
         <label for="mail">Email Address:</label>
-        <input type="email" id="mail" name="email">
+        <input type="email" id="mail" name="email" required><br>
 <!-- 1. Applicant telephone number -->
         <label for="tel-num">Telephone:</label>
-        <input type="tel" id="tel-num" name="phone">
+        <input type="tel" id="tel-num" name="phone" required><br>
 <!-- 1. Applicant LinkedIn URL  -->
-        <label for="linkedin">LinkedIn URI:</label>
-        <input type="url" id="linkedin" name="linkin">
+        <label for="linkedin">LinkedIn URL:</label>
+        <input type="url" id="linkedin" name="linkin" required><br>
       </fieldset>
       <fieldset class="employ-info">
         <h2>Employment Information</h2>
 <!-- 1. Applicant occupation -->
         <label for="job">Occupation:</label>
-        <input type="text" id="job" name="occupation">
+        <input type="text" id="job" name="occupation"><br>
 <!-- 1. Applicant employer -->
         <label for="boss">Employer:</label>
-        <input type="text" id="boss" name="employer">
+        <input type="text" id="boss" name="employer"><br>
 <!-- 1. Employer address -->
         <label for="emp-address">Employer's Street Address:</label>
-        <input type="text" id="emp-address" name="emp-st-add">
+        <input type="text" id="emp-address" name="emp-st-add"><br>
         <label for="emp-city">City</label>
-        <input type="text" id="emp-city" name="emp-city-add">
+        <input type="text" id="emp-city" name="emp-city-add"><br>
         <label for="emp-state">State:</label>
         <select id="emp-state" name="emp-st" size="1">
+          <option value="null" disabled selected>State</option>
           <option value="AK">AK</option>
           <option value="AL">AL</option>
           <option value="AR">AR</option>
@@ -163,9 +165,9 @@
           <option value="WI">WI</option>
           <option value="WV">WV</option>
           <option value="WY">WY</option>
-        </select>
+        </select><br>
         <label for="zip">Zip Code</label>
-        <input type="text" id="zip" name="zip-code">
+        <input type="text" id="zip" name="zip-code"><br>
       </fieldset>
 
       <fieldset class="loan-info">
@@ -181,37 +183,37 @@
           <option value="personal">Personal</option>
     <!-- 1. Mortgage -->
           <option value="martgage">Mortgage</option>
-        </select>
+        </select><br>
 <!-- 1. Requested amount of loan -->
         <label for="amount">Loan Amount:</label>
-        <input type="text" id="amount" name="loan-amount">
+        <input type="text" id="amount" name="loan-amount"><br>
 <!-- 1. Radio button elements for loan length -->
-        <label>Desired Loan Duration:</label>
+        <h5>Desired Loan Duration:</h5>
     <!-- 1. 5 years -->
           <input type="radio" id="five-yrs" value="five-yrs" name="loan-time">
-            <label for="five-yrs" class="duration">5 Years</label>
+            <label for="five-yrs" class="duration">5 Years</label><br>
     <!-- 1. 15 years -->
           <input type="radio" id="fifteen-yrs" value="fifteen-yrs" name="loan-time">
-            <label for="fifteen-yrs" class="duration">15 Years</label>
+            <label for="fifteen-yrs" class="duration">15 Years</label><br>
     <!-- 1. 30 years -->
           <input type="radio" id="thirty-yrs" value="thirty-yrs" name="loan-time">
-            <label for="thirty-yrs" class="duration">30 Years</label>
+            <label for="thirty-yrs" class="duration">30 Years</label><br>
       </fieldset>
       <fieldset>
 <!-- 1. Checkbox group for special conditions -->
-        <label>Special Conditions:</label>
+        <h2>Special Conditions:</h4>
     <!-- 1. I have a down payment -->
           <input type="checkbox" id="down-pmt" value="cond-down-pmt" name="spec-cond">
-            <label for="down-pmt" class="sp-cond">I have a down payment</label>
+            <label for="down-pmt" class="sp-cond">I have a down payment</label><br>
     <!-- 1. Out-of-state resident -->
           <input type="checkbox" id="out-state" value="cond-out-st" name="spec-cond">
-            <label for="out-state" class="sp-cond">I live out-of-state</label>
+            <label for="out-state" class="sp-cond">I live out-of-state</label><br>
     <!-- 1. Married -->
           <input type="checkbox" id="married" value="cond-married" name="spec-cond">
-            <label for="married" class="sp-cond">I am married</label>
+            <label for="married" class="sp-cond">I am married</label><br>
     <!-- 1. Loan will be co-signed -->
           <input type="checkbox" id="co-sign" value="cond-co-sign" name="spec-cond">
-            <label for="co-sign" class="sp-cond">I have a co-signer</label>
+            <label for="co-sign" class="sp-cond">I have a co-signer</label><br>
       </fieldset>
        
 <!-- 1. A text area to allow for additional comments -->
