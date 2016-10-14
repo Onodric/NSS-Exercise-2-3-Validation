@@ -1,0 +1,18 @@
+
+/*1. If the value is invalid, the color should be red.*/
+input[type="url"]:invalid,
+/*input[type="tel"]:invalid, {*/
+input[type="email"]:invalid {
+  color: red;
+  background-color: pink;
+  box-shadow: 0 0 5px darkred;
+}
+
+/*1. When a valid web URL or email address is entered into the corresponding field, the color of the field should be green.*/
+input[type="url"]:valid,
+/*input[type="tel"]:valid,*/
+input[type="email"]:valid {
+  color: green;
+  background-color: lightgreen;
+  box-shadow: 0 0 5px darkgreen;
+}
